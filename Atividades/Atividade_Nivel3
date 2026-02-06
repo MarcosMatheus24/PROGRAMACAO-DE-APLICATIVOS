@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Atividade {
+    public static void main(String[]args){
+        //Atividade 8
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Qual seu nome?");
+        String nome = scanner.next();
+        System.out.println("BEM VINDO!!" + nome);
+        //Atividade 9
+        System.out.println("Qual o seu nome?");
+        String nome1 = scanner.nextLine();
+        System.out.println("Diga o nome da sua cidade");
+        String cidade = scanner.next();
+        System.out.println("O seu nome é" + nome1 + " E sua cidade é " + cidade);
+    }
+}
