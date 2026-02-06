@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class Atividade {
+    public static void main(String[] args){
+        //Atividade 10
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("digite um valor booleano");
+        boolean bool = scanner.nextBoolean();
+        //Atividade 11
+        System.out.println(bool);
+    }
+}
