@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Atividade {
+    public static void main(String[]args){
+        //Atividade 5
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Qual sua altura?");
+        double altura = scanner.nextDouble();
+        System.out.println(altura);
+        //Atividade 6
+        System.out.println("Informe um numero");
+        int num = scanner.nextInt();
+        System.out.println("Informe outro Numero");
+        int num2 = scanner.nextInt();
+        double media;
+        media = (double) (num + num2) /2;
+        System.out.println(media);
+        //Atividade 7
+        System.out.println("Qual o valor do produto?");
+        double preco = scanner.nextDouble();
+        System.out.println("Qual foi a quantidade comprada?");
+        int quantidade = scanner.nextInt();
+        double valor_total = quantidade * preco;
+        System.out.println(valor_total);
+        }
+    }
