@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Atividade {
+    public static void main (String[]args){
+    Scanner scanner = new Scanner(System.in);
+        System.out.println("Qual o nome do Produto");
+        String nome_produto = scanner.next();
+        System.out.println("Qual o preço do produto?");
+        double preco = scanner.nextDouble();
+        System.out.println("Qual a quantidade comprada?");
+        int quantidade = scanner.nextInt();
+        double valor_total;
+        valor_total = quantidade * preco;
+        System.out.println("O valor total a pagar será " + valor_total);
+    }
+}
