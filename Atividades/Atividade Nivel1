@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Atividades {
+    public static void main(String[]args){
+        int valor = 10;
+        System.out.println(valor);
+    }
+    static void  Atividade1(){
+        int valor1 = 5;
+        int valor2 = 5;
+        System.out.println(valor1 + valor2);
+    }
+    static void Atividade2 (){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Qual a sua idade?");
+        int idade = scanner.nextInt();
+        System.out.println("Sua idade é" + idade);
+    }
+    static void Atividade3 (){
+        int num = 10;
+        System.out.println("o dobro desse numero é" + num*2);
+    }
+}
