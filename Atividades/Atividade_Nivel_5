@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class Atividade {
+    public static void main(String[]args){
+        //Atividade 12 && 13
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Qual seu nome");
+        String nome = scanner.next();
+        char letra = nome.charAt(0);
+        System.out.println(letra);
+    }
+}
