@@ -1,0 +1,79 @@
+/*3.Faça um algoritmo que leia 2 valores numéricos e um símbolo. Caso o símbolo seja um dos
+relacionados abaixo efetue a operação correspondente com os valores.
+        a. “+” operação de soma
+b. “-” operação de subtração
+c. “*” operação de multiplicação
+d. “/” operação de divisão
+e. “**” exponencial
+ */
+public class Calc {
+    static void main(String[]args){
+    int op = 0;
+    char operacao;
+    Scanner scanner = new Scanner(System.in);
+        System.out.println("Bem vindo a Calculadora de Java!!\n");
+        System.out.println("informe um numero");
+        double n1 = scanner.nextDouble();
+        System.out.println("informe outro numero");
+        double n2 = scanner.nextDouble();
+    do{
+        System.out.println("Menu Principal\n");
+        System.out.println("(1) Entrar na calculadora");
+        System.out.println("(2) Sair do programa");
+        op = scanner.nextInt();
+        switch (op){
+            case 1:
+                System.out.println("Diga a operação desejada");
+                System.out.println("+ para operações de soma");
+                System.out.println("- para operações de subtração");
+                System.out.println("* para operações de multiplicações");
+                System.out.println("/ para operações de divisão");
+                System.out.println("x para operações exponenciais");
+                operacao = scanner.next().charAt(0);
+                switch (operacao){
+                    case '+':
+                        double soma = n1 + n2;
+                        System.out.println("O valor da soma é" + soma);
+                        break;
+                    case '-':
+                        double subtracao = n1 - n2;
+                        System.out.println("O valor da subtração é" + subtracao);
+                        break;
+                    case '*':
+                        double multiplicacao = n1 * n2;
+                        System.out.println("O valor da multiplicação é" + multiplicacao);
+                        break;
+                    case '/':
+                        if (n1 == 0 || n2 == 0){
+                            System.out.println("O valor da divisão nao pode ser calculado por 0");
+                            break;
+                        }
+                        double divisao = n1 / n2;
+                        System.out.println("O valor da divisão é" + divisao);
+                        break;
+                    case 'x':
+                        double exponencial1 = Math.pow(n1,2);
+                        double exponencial2 = Math.pow(n2,2);
+                        System.out.println("O valor do primeiro numero ao quadrado é" + exponencial1);
+                        System.out.println("O valor do segundo numero ao quadrado é " + exponencial2);
+                        break;
+                    default:
+                        int exit = 0;
+                        String sair;
+                        while(true){
+                            System.out.println("Nao foi possivel realizar a operação");
+                            System.out.println("Digite 'EXIT' para voltar para o início");
+                            sair = scanner.next();
+                            if(sair.toLowerCase().contains("exit")){
+                                break;
+                            }else{
+                                System.out.println("Entrada incorreta, Tente Novamente");
+                            }
+                        }
+                }break;
+        }
+    }while(op != 2);
+
+    }
+
+}
